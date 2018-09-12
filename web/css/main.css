@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(/images/body.jpg);
+	height: 100%;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1800px;
+	min-height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	background-image: url(/images/sea.jpg);
+	background-size: 100%;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	opacity: 0.7;
+}
+.content {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: stretch;
+	min-height: calc(100vh - 320px);
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.left-side {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 750px;
+	background: #d0e0f3;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
+
+
+}
+
+.play {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.add_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.play video {
+	border: 1px solid black;
+	object-fit: fill;
+}
+
+#minus {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 30px;
+}
+
+#plus {
+	position: absolute;
+	bottom: 60px;
+	right: 20px;
+	width: 30px;
+}
+
+.add-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 640px;
+	height: 400px;
+	overflow: auto;
+	cursor: pointer;
+
+}
+
+.add-images img:hover {
+	border: 1px solid gray;
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+        -webkit-transition: all 0.50s;
+        transition: all 0.50s;
+}
+
+.btn {
+	display: flex;
+}
+.side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 150;
+	flex-basis: 500px;
+	background: #d0e0f3;
+	border-radius: 5px;
+	align-self: stretch;
+}
+.footer {
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	border-radius: 5px;
+	margin: 0 auto;
+	flex: 0 0 auto;
+	position: relative;
+	opacity: 0.7;
+}
+.username {
+	display: flex;
+	margin: 20px;
+	width: 350px;
+	justify-content: space-around;
+}
+.screens {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.image {
+	width: 320px;
+	height: 260px;
+	margin: 10px;
+}
+
+.pagin {
+	margin-bottom: 40px;
+	margin: 40px auto;
+}
+
+.pagination {
+	display: flex;
+
+}
+
+ul {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.pagination li{
+	border: 0; margin: 0; padding: 0;
+	font-size: 14px;
+	list-style: none;
+}
+
+.pagination a:hover {
+	border: solid 1px #666;
+}
+
+.pagination a {
+	border: solid 1px #ddd;
+	margin-right: 2px;
+}
+
+.pagination .active a{
+	color: #0063e3;
+	font-weight: bold;
+	display: block;
+	padding: 3px 6px;
+	text-decoration: none;
+	background: #ccc;
+}
+
+.pagination .nav-link {
+	color: #0063e3;
+	display: block;
+	padding: 3px 6px;
+	text-decoration: none;
+}
+
+.likes {
+	display: flex;
+	align-items: center;
+}
+
+.count-like {
+	width: 15px;
+	color: rgb(107,112,160);
+	margin-bottom: 3px;
+	flex-grow: 1;
+
+}
+
+.comments {
+	margin-bottom: 3px;
+	
+}
+.comments a {
+	text-decoration: none;
+	color: rgb(107,112,160);
+}
+
+textarea {
+	width: 620px;
+	height: 100px;
+	margin: 40px 9px 10px 9px;
+	resize: none;
+}
+
+.single-comment {
+	margin: 0 14px;
+	padding: 3px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.single-comment p {
+	font-family: Robot, Arial;
+	font-weight: 1.3em;
+	margin: 5px 3px;
+	color: #444;
+}
+
+.login-comment {
+	margin-right: 10px;
+	float: left;
+	font-weight: bold;
+}
+
+.date-comment {
+	font-size: 12px;
+	color: rgb(107,112,160);
+	padding-top: 2px;
+}
+
+.buttons-comment {
+	margin-bottom: 20px;
+}
+
+.buttons-comment button{
+	float: right;
+	margin-right: 10px;
+}
+
+.modal-comments {
+	min-height: 700px;
+}
+
+.footer > p {
+	position: absolute;
+	bottom: 10px;
+	right: 100px;
+}
